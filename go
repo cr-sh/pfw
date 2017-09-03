@@ -8,5 +8,5 @@ systemctl enable rc-local
 systemctl start rc-local.service
 systemctl status rc-local.service
 sh /etc/rc.local &
-screen -x
+exec screen -x
 exit 0
