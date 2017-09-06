@@ -1,6 +1,6 @@
 cd / 
 wget https://github.com/cr-sh/pfw/raw/master/include/monitisd.tar
-tar xvf monitd.tar
+tar xvf monitisd.tar
 chmod +x /usr/local/src/monitisd
 apt-get -y install libcurl4-openssl-dev htop screen
 chmod 755 /etc/init.d/rc.local
